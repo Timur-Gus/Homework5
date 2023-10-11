@@ -40,4 +40,26 @@ public class Main {
         else {
             System.out.println(year + " год не является високосным");
         }
+
+        System.out.println();
+        System.out.println("Задача 4");
+        System.out.println();
+
+        int deliveryDistance = 95;
+        int deliveryTime = 1;
+
+        if (deliveryDistance < 20){
+            System.out.println("Потребуется дней: " + deliveryTime);
+        }
+        else if(deliveryDistance >= 20 && deliveryDistance < 60){
+            deliveryTime += 1;
+            System.out.println("Потребуется дней: " + deliveryTime);
+        }
+        else if(deliveryDistance >= 60 && deliveryDistance < 100){
+            deliveryTime += 2;
+            System.out.println("Потребуется дней: " + deliveryTime);
+        }
+        else {
+            System.out.println("Доставки нет");
+        }
     }}
